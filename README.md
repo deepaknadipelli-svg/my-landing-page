@@ -1,3 +1,8 @@
+Vercel Live Deployed URL: https://my-landing-page-sandy-ten.vercel.app/
+
+Github Repository Link: https://github.com/deepaknadipelli-svg/my-landing-page.git
+
+
 # Unbundl Assignment Reference Document
 
 ---
