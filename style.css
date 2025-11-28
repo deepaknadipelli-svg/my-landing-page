@@ -1,0 +1,1079 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #000;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    background-color: #FFF9F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 2rem;
+  }
+  
+  .brand-heading {
+    line-height: 1.1;
+    margin: 0;
+  }
+  
+  .clove {
+    color: #F8943F;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  }
+  
+  .smile {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .dental {
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 25px;
+    letter-spacing: 0.4rem;
+  }
+  
+  .header-right {
+    display: flex;
+    gap: 0.6rem;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .appointment-btn {
+    background-color: #F8943F;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: 1px solid #F8943F;
+    width: 193px;
+    height: 25px;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .phone-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    text-decoration: none;
+    width: 193px;
+    height: 25px;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .left-card {
+    width: 65%;
+    height: 500px;
+    background-image: url('./assets/lab.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .left-overlay-card {
+    width: 644px;
+    height: 153px;
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 149px;
+    left: 0;
+    padding: 24px 60px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    z-index: 0;
+  }
+  
+  .left-overlay-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  
+  .text-box {
+    width: 426px;
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .overlay-heading {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .overlay-subheading {
+    font-size: 0.85rem;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .center-btn {
+    background-color: #F8943F;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: 1px solid #F8943F;
+    width: 193px;
+    height: 25px;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doctor-image {
+    position: absolute;
+    right: 100px;
+    top: 15%;
+    transform: translateY(-50%) scaleX(-1);
+    height: 180%;
+    z-index: 2;
+  }
+  
+  .right-card {
+    width: 35%;
+    height: 500px;
+    background: #FFF9F4;
+    border: 1px solid #FFE0C4;
+    padding: 24px 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-card-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+  }
+  
+  .right-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .right-description {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .input-box {
+    padding: 16px;
+    background-color: #fff;
+    color: #777777;
+    font-size: 0.9rem;
+    border: 1px solid #FFE0C4;
+    border-radius: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .input-box:invalid {
+    border-color: rgb(240, 162, 102);
+  }
+  
+  .input-box::placeholder {
+    color: #777777;
+  }
+  
+  .captcha-input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .captcha-with-code {
+    padding-right: 100px;
+    height: 50px;
+  }
+  
+  .captcha-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    padding: 0 30px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  .checkbox-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    color: #777777;
+  }
+  
+  .checkbox-wrapper input[type="checkbox"] {
+    transform: scale(1.4);
+    margin-top: 3px;
+  }
+  
+  .fullwidth-btn {
+    width: 100%;
+    height: 45px;
+  }
+  
+  .bottom-strip {
+    width: 100%;
+    height: 80px;
+    background-color: #FFF9F4;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .stats-marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .stats-track {
+    display: flex;
+    animation: scroll-left 30s linear infinite;
+    width: max-content;
+    gap: 120px;
+  }
+  
+  .stat-group {
+    display: flex;
+    gap: 120px;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+  }
+  
+  .stat-item i {
+    font-size: 2rem;
+  }
+  
+  .orange {
+    color: #F8943F;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .black {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .smiles-card-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .smiles-card-content {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 40px;
+  }
+  
+  .smiles-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #000;
+    text-align: center;
+  }
+  
+  .smiles-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .smiles-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  .smile-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 23%;
+  }
+  
+  .smile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .smile-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 4px;
+  }
+  
+  .smile-name {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .smile-place {
+    color: #F8943F;
+    font-weight: 500;
+  }
+  
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .info-card-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info-card-content {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 40px;
+  }
+  
+  .info-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #000;
+    text-align: center;
+  }
+  
+  .info-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .treatment-row {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .treatment-card {
+    width: 48%;
+    background-color: #fff;
+    border: 1px solid #FFE0C4;
+    border-radius: 12px;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+    min-height: 320px;
+  }
+  
+  .treatment-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+  }
+  
+  .treatment-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  
+  .treatment-subtitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+  }
+  
+  .treatment-description {
+    font-size: 0.9rem;
+    color: #444;
+    margin: 6px 0 12px;
+  }
+  
+  .treatment-types {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  
+  .treatment-list {
+    padding-left: 18px;
+    margin: 0 0 12px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .treatment-list li {
+    margin-bottom: 4px;
+  }
+  
+  .starting-price {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 4px;
+    color: #F8943F;
+  }
+  
+  .price-amount {
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 0 12px;
+  }
+  
+  .faq-card-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .faq-card-content {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 40px;
+  }
+  
+  .faq-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #000;
+    text-align: center;
+  }
+  
+  .faq-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .faq-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .faq-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .faq-item {
+    border: 1px solid #FFE0C4;
+    border-radius: 10px;
+    padding: 16px;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .faq-toggle {
+    color: #F8943F;
+    font-size: 1.2rem;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding-top: 12px;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .faq-image {
+    flex: 0 0 40%;
+  }
+  
+  .faq-img {
+    width: 100%;
+    height: auto;
+    max-height: 350px; 
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .booking-section {
+    width: 100%;
+    background-color: #FFF9F4;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .booking-card {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+  
+  .booking-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+  }
+  
+  .booking-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .booking-inputs {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .booking-input {
+    flex: 1;
+    padding: 14px 16px;
+    background-color: #fff;
+    color: #777;
+    font-size: 0.9rem;
+    border: 1px solid #FFE0C4;
+    border-radius: 30px;
+    box-sizing: border-box;
+  }
+  
+  .booking-input:invalid {
+    border-color: rgb(240, 162, 102);
+  }
+  
+  .booking-input::placeholder {
+    color: #777;
+  }
+  
+  .booking-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .booking-checkbox {
+    font-size: 0.9rem;
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .booking-checkbox input[type="checkbox"] {
+    transform: scale(1.2);
+  }
+  
+  .footer-section {
+    width: 100%;
+    background-color: #462512;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+  
+  .footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    min-width: 250px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .footer-divider {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ffffff;
+    width: 100%;
+  }
+  
+  .footer-note {
+    font-size: 0.9rem;
+    color: white;
+    line-height: 1.4;
+    text-align: right;
+  }
+  
+  .white-text {
+    color: white;
+  }
+  
+  .linkedin-link {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .linkedin-link a {
+    color: #0a66c2;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+  }
+  
+  .linkedin-link a:hover {
+    color: #004182;
+  }
+  
+  
+  @media (max-width: 768px) {
+    html, body {
+      overflow-x: hidden;
+      max-width: 100vw;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  
+    .header {
+      direction: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 1rem;
+    }
+  
+    .clove {
+      font-size: 2rem;
+      font-weight: 500;
+      color: #F8943F;
+    }
+  
+    .smile {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #000;
+    }
+  
+    .dental {
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-left: 25px;
+      color: #000;
+    }
+  
+    .header .appointment-btn {
+      display: none;
+    }
+  
+    .left-card .appointment-btn {
+      width: 150px;
+    }
+  
+    .phone-btn {
+      background-color: #fff;
+      color: #000;
+      padding: 8px 12px;
+      border-radius: 50px;
+      border: 1px solid #000;
+      width: 150px;
+      height: 25px;
+      gap: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+  
+    .cards-container {
+      display: contents;
+    }
+  
+    .left-card {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      background-position: center;
+    }
+  
+    .left-overlay-card {
+      width: 100%;
+      height: 153px;
+      background: rgba(255, 255, 255, 0.4);
+      position: absolute;
+      top: 80px;
+      left: 0;
+      padding: 20px 30px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: start;
+      z-index: 0;
+    }
+  
+    .text-box {
+      width: 100%;
+      height: auto;
+    }
+  
+    .doctor-image {
+      position: absolute;
+      left: 30px;
+      right: 0;
+      bottom: 0;
+      top: 180px;
+      height: 130%;
+      transform: translateY(-50%) scaleX(-1);
+      z-index: 2;
+    }
+  
+    .bottom-strip {
+      order: 2;
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
+    }
+  
+    .right-card {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .right-card-content {
+      height: auto;
+    }
+  
+    .stats-track {
+      gap: 60px;
+    }
+  
+    .stat-group {
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+  
+    .stat-item {
+      font-size: 0.9rem;
+    }
+  
+    .stat-item i {
+      font-size: 1.5rem;
+    }
+  
+    .orange {
+      font-size: 1.2rem;
+    }
+  
+    .black {
+      font-size: 1rem;
+    }
+  
+    .info-card-section {
+      padding: 20px 0;
+    }
+  
+    .info-card-content {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  
+    .treatment-row {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .treatment-card {
+      flex: 0 0 85%;
+      min-width: 85%;
+      scroll-snap-align: start;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .treatment-card:first-child {
+      margin-left: 40px;
+    }
+  
+    .treatment-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+  
+    .treatment-text {
+      padding: 16px;
+    }
+  
+    .info-title,
+    .info-description {
+      text-align: center;
+      padding: 0 10px;
+    }
+  
+    .smiles-title,
+    .smiles-description {
+      text-align: center;
+      padding: 0 20px;
+    }
+  
+    .smiles-title {
+      font-size: large;
+    }
+  
+    .smiles-row {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .smile-card {
+      flex: 0 0 85%;
+      min-width: 85%;
+      scroll-snap-align: start;
+    }
+  
+    .faq-card-section {
+      padding: 20px 0;
+    }
+  
+    .faq-card-content {
+      padding: 0 20px;
+    }
+  
+    .faq-title,
+    .faq-description {
+      text-align: center;
+      padding: 0 10px;
+    }
+  
+    .faq-layout {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .faq-image {
+      order: -1;
+      width: 100%;
+    }
+  
+    .faq-img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      display: block;
+    }
+  
+    .faq-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-right: 23px;
+    }
+  
+    .faq-item {
+      width: 100%;
+    }
+  
+    .booking-section {
+      padding: 20px 0;
+    }
+  
+    .booking-card {
+      padding: 0 20px;
+    }
+  
+    .booking-inputs {
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+  
+    .booking-input {
+      width: 100%;
+    }
+  
+    .booking-bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-left {
+      width: 100%;
+    }
+  
+    .footer-right {
+      width: 100%;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .footer-links {
+      width: 100%;
+      justify-content: space-between;
+      padding-right: 10px;
+    }
+  
+    .footer-note {
+      text-align: left;
+    }
+  
+    .white-text {
+      color: white;
+    }
+  
+    .footer-section .brand-heading {
+      text-align: center;
+    }
+  
+  }
